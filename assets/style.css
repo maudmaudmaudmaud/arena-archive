@@ -1,21 +1,43 @@
 /* These styles are just to make it easier to see the blocks, initially. */
 
 body {
-	font-family: monospace;
-	padding: 40px;
+	background-color: #EEE2D1;
+	font-family: 'Baskervville', serif;
+	padding: 60px 40px;
+	display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+	gap: 20px 50px;
 }
 
 a {
 	color: royalblue;
 }
 
-h1, h2, h3 {
+h1 {
+	font-size: 300%;
+	font-family: 'Abril Fatface', serif;
+	background: -webkit-linear-gradient(#EEE2D1, #493E30, #EEE2D1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
 	font-size: 200%;
+	font-family: 'Abril Fatface', serif;
+	color: #493E30;
+}
+
+h3 {
+	font-family: 'Baskervville', serif;
+	font-style: italic;
+	font-size: 150%;
+	color: #493E30;
 }
 
 section,
 figure {
-	margin-top: 80px;
+	margin-top: 40px;
 	max-width: 600px;
 }
 
@@ -26,5 +48,18 @@ figure > *:not(:first-child),
 	display: block;
 	margin-top: 1em;
 }
+
+#background-box {
+	background-color: #FBF5EC;
+	display: block;
+	margin-top: 6em;
+	padding: 40px 40px;
+}
+
+header {
+	position: fixed;
+}
+
+
 
 /* Clear them out once you’ve got your channel plugged in! */
