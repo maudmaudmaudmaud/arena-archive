@@ -5,9 +5,7 @@ body {
 	font-family: 'Baskervville', serif;
 	padding: 60px 40px;
 	display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-	gap: 20px 50px;
+	flex-direction: column;
 }
 
 a {
@@ -50,10 +48,8 @@ figure > *:not(:first-child),
 }
 
 #background-box {
-	background-color: #FBF5EC;
 	display: block;
 	margin-top: 6em;
-	padding: 40px 40px;
 }
 
 header {
