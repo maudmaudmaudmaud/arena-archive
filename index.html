@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baskervville:ital@0;1&family=Zilla+Slab+Highlight:wght@400;700&family=BioRhyme+Expanded:wght@300;400&family=BioRhyme:wght@300&display=swap" rel="stylesheet">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="assets/reset.css" rel="stylesheet">
@@ -23,18 +23,22 @@
 		</div> <!-- Same heres for the channel description. -->
 		<!-- All the channel “blocks” will be created as children, here. -->
 		<!-- You could move the classes to different section elements to separate the types! -->
+		<div class="scroll" style="background-image: url('images/newspaper.png'); background-repeat: no-repeat; background-position: center; background-size: 40vw">
 		<section class="image-blocks pdf-blocks">
-			<h2>Images</h2>
 		</section>
+		</div>
+		<div class="scroll" style="background-image: url('images/radio.png'); background-repeat: no-repeat; background-position: center; background-size: 50vw">
 		<section class="audio-embed-blocks audio-file-blocks">
-			<h2>Audio</h2>
 		</section>
+		</div>
+		<div class="scroll" style="background-image: url('images/tv.png'); background-repeat: no-repeat; background-position: center; background-size: 50vw">
 		<section class="video-embed-blocks video-file-blocks">
-			<h2>Video</h2>
 		</section>
+		</div>
+		<div class="scroll" style="background-image: url('images/macintosh.png'); background-repeat: no-repeat; background-position: center; background-size: 25vw">
 		<section class="embed-blocks link-blocks text-blocks">
-			<h2>Links</h2>
 		</section>
+		</div>
 
 
 
@@ -60,35 +64,32 @@
  		<!-- Uploaded audio files. -->
 		<template id="audio-file-block">
 			<figure class="audio-file-block">
-				<h3 class="title"></h3>
+				<h3 class="title" id="audio-h3"></h3>
 				<img class="image">
 				<audio class="audio" controls></audio> <!-- Audio source inserts here. -->
-				<figcaption class="description"></figcaption>
-				<p class="type"></p>
+				<!-- <figcaption class="description"></figcaption> -->
 			</figure>
 		</template>
 
 		<template id="image-block">
 			<figure class="image-block">
-				<h3 class="title"></h3>
+				<h3 class="title" id="image-h3"></h3>
 				<img class="image">
 				<a class="link">
 					<p class="link-title"></p>
 				</a>
-				<figcaption class="description"></figcaption>
-				<p class="type"></p>
+				<!-- <figcaption class="description"></figcaption> -->
 			</figure>
 		</template>
 
 		<template id="link-block">
 			<figure class="link-block">
-				<h3 class="title"></h3>
+				<h3 class="title" id="link-h3"></h3>
 				<img class="image">
 				<a class="link">
 					<p class="link-title"></p>
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
@@ -100,7 +101,6 @@
 					<p class="link-title"></p> <!-- Repeats the block title. -->
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
@@ -109,35 +109,34 @@
 				<h3 class="title"></h3>
 				<div class="content"></div> <!-- Text blocks insert their HTML here. -->
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
 		<!-- YouTube, Vimeo, etc. -->
 		<template id="video-embed-block">
 			<figure class="video-embed-block">
-				<h3 class="title"></h3>
-				<img class="image">
+				<h3 class="title" id="video-h3"></h3>
 				<div class="embed"></div>
-				<a class="link">
 					<p class="link-title"></p>
 				</a>
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
 		<!-- Uploaded video files. -->
 		<template id="video-file-block">
 			<figure class="video-file-block">
-				<h3 class="title"></h3>
+				<h3 class="title" id="video-h3"></h3>
 				<img class="image">
 				<video class="video" controls></video> <!-- Video source inserts here. -->
 				<figcaption class="description"></figcaption>
-				<p class="type"></p>
 			</figure>
 		</template>
 
+<div class="footer">
+	<h2>Thank you to <a href="https://www.are.na/tegwen-mckenzie">Tegwen</a> for starting the collection</h2>
+	<h2>Website styled by <a href="https://www.are.na/maud-thuland">Maud</a></h2>
+</div>
 
 
 	</body>
